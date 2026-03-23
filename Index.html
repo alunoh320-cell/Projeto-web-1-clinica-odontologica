@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/logo.jpg" type="image/jpg">
+
+  <meta name="author" content="Henrique, Deivid, Eduardo">
+  <meta name="description" content="Clínica odontológica especializada em ortodontia moderna, alinhadores invisíveis e clareamento dental. Atendimento humanizado e tecnologia avançada.">
+  <meta name="keywords" content="dentista, ortodontia, aparelho fixo, alinhador invisível, clareamento dental, clínica odontológica">
+
+  <title>Atlas Dental | Ortodontia e Clareamento Dental</title>
+</head>
+
+<body>
+
+<div class="controle-fonte">
+  <button onclick="aumentarFonte()">A+</button>
+  <button onclick="diminuirFonte()">A-</button>
+</div>
+
+<header>
+  
+  <div class="logo">
+    <h2> Atlas Dental</h2>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ✅ ID ADICIONADO -->
+<section id="inicio" class="hero">
+<div class="hero-content">
+    <h2>Transforme seu sorriso</h2>
+    <p>Ortodontia moderna com tecnologia e conforto</p>
+<a href="https://wa.me/5551997320616" 
+   target="_blank" class="btn">
+   Agendar consulta
+</a>
+</div>
+</section>
+
+<main>
+
+  <!-- ✅ ID ADICIONADO -->
+  <section id="sobre">
+    <div class="section-title">
+      <h2>Sobre a Clínica</h2>
+      <p>Na Atlas Dental, cuidamos do seu sorriso com tecnologia, precisão e atendimento humanizado. Nosso objetivo é oferecer tratamentos ortodônticos de alta qualidade, sempre priorizando o conforto e a confiança de cada paciente.
+   <br><br>
+Acreditamos que cada sorriso é único, por isso desenvolvemos planos personalizados para atender às necessidades individuais, garantindo resultados eficientes e duradouros.</p>
+    </div>
+
+<article class="about">
+  <figure>
+    <img src="img/clinica.jpg" alt="Interior da clínica">
+  </figure>
+        <p>Somos especializados em ortodontia moderna, utilizando técnicas atualizadas e equipamentos de última geração. Trabalhamos com aparelhos fixos, alinhadores invisíveis e procedimentos estéticos, sempre focando em oferecer soluções seguras e eficazes.
+  <br> <br>
+Nossa equipe está preparada para acompanhar cada etapa do seu tratamento, proporcionando um atendimento próximo, transparente e de qualidade.</p>
+
+</article>
+  </section>
+
+  <!-- ✅ ID ADICIONADO -->
+  <section id="servicos">
+    <div class="section-title">
+      <h2>Nossos Serviços</h2>
+    </div>
+
+    <div class="services">
+     <article class="card" onclick="abrirWhats('Aparelho Fixo')">
+  <h3>Aparelho Fixo</h3>
+  <p>Correção eficiente com técnica tradicional.</p>
+     </article>
+
+<article class="card" onclick="abrirWhats('Alinhadores Invisíveis')">
+  <h3>Alinhadores Invisíveis</h3>
+  <p>Tratamento discreto e confortável.</p>
+</article>
+
+<article class="card" onclick="abrirWhats('Clareamento Dental')">
+  <h3>Clareamento Dental</h3>
+  <p>Deixe seu sorriso mais branco e brilhante.</p>
+</article>
+    </div>
+  </section>
+
+<section id="comentarios">
+  <div class="section-title">
+    <h2>Depoimentos</h2>
+    <p>Veja o que nossos pacientes dizem</p>
+  </div>
+
+  <div class="comentarios-container">
+
+    <div id="lista-comentarios"></div>
+
+<form class="form-comentario" onsubmit="event.preventDefault(); adicionarComentario();">
+     
+   
+     
+      <textarea id="mensagem" placeholder="Deixe seu comentário"></textarea>
+<button type="submit" class="btn">Enviar</button>
+</form>
+
+  </div>
+</section>
+
+  <!-- ✅ ID ADICIONADO -->
+  <section id="contato" class="contact">
+    <div class="section-title">
+      <h2>Entre em Contato</h2>
+      <p>Agende sua avaliação agora mesmo</p>
+    </div>
+    
+<a href="https://wa.me/5551997320616" 
+   target="_blank" class="btn">
+   Fale conosco
+</a>
+
+
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Clínica Atlas Dental</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
